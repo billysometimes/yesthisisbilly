@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block main %}
+  {% if post_list %}
+    <ul>
+      {% for post in post_list %}
+      <li>
+        <div class="post-card">
+          <h4>{{post.title}}</h4>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p> no posts</p>
+  {% endif %}
+{% endblock %}
