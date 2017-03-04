@@ -70,7 +70,7 @@ coverage.xml
 *.mo
 *.pot
 
-# Django 
+# Django
 *.log
 
 # Sphinx documentation
@@ -81,3 +81,6 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+#my database
+db.sqlite3

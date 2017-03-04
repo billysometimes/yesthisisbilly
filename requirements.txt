@@ -3,3 +3,4 @@ behave==1.2.5
 django_behave==0.1.5
 splinter==0.7.5
 factory_boy==2.8.1
+social-auth-app-django==1.1.0
