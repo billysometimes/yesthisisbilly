@@ -5,4 +5,5 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^blog/$', views.blog, name='blog'),
     url(r'^blog/post/$', views.post, name='post'),
+    url(r'^blog/post/submit/$', views.submit, name='submit'),
 ]
