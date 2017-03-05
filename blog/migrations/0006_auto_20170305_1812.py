@@ -6,10 +6,10 @@ from django.db import migrations, models
 
 tags_list = ['work', 'projects', 'shots and goggles']
 
-def save_tags(apps schema_editor):
+def save_tags(apps, schema_editor):
     Tag = apps.get_model('blog', 'Tag')
     for tag in tags_list:
-        t = Tag(tag)
+        t = Tag(word=tag)
         t.save()
 
 class Migration(migrations.Migration):
@@ -19,5 +19,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(combine_names),
+        migrations.RunPython(save_tags),
     ]
